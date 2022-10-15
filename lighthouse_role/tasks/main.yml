@@ -24,12 +24,6 @@
    state: directory
    mode: 0777
 #
-- name: Add domain
-  become: true
-  template:
-    src: lighthouse_nginx.j2
-    dest: /etc/nginx/sites-enabled/default 
-#
 - name: Extract lighthouse
   become: true
   unarchive:
