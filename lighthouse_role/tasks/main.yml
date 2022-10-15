@@ -17,7 +17,6 @@
     #remote_src: yes
     mode: 0644
 #
-#
 - name: Creating directory
   become: true
   file:
